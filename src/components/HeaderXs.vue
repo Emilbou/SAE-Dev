@@ -115,7 +115,7 @@
 
             <!--Navigation-->
 
-            <RouterLink to="/" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-black">Accueil</RouterLink>
+            <RouterLink to="/" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-2xl text-black">Accueil</RouterLink>
           </div>
 
           <!--icones Calendrier-->
@@ -140,7 +140,7 @@
 
             <!--Navigation-->
 
-            <RouterLink to="/Programmation" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-black"
+            <RouterLink to="/Programmation" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-2xl text-black"
               >Programmation</RouterLink
             >
           </div>
@@ -165,7 +165,7 @@
 
             <!--Navigation-->
 
-            <RouterLink to="/Artistes" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-black">Artistes</RouterLink>
+            <RouterLink to="/Artistes" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-2xl text-black">Artistes</RouterLink>
           </div>
 
           <!--icones Tickets-->
@@ -188,7 +188,7 @@
 
             <!--Navigation-->
 
-            <RouterLink to="/Tickets" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-black">Tickets</RouterLink>
+            <RouterLink to="/Tickets" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-2xl text-black">Tickets</RouterLink>
           </div>
 
           <!--icones Nous contacter-->
@@ -213,7 +213,7 @@
 
             <!--Navigation-->
 
-            <RouterLink to="/Nouscontacter" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-black"
+            <RouterLink to="/Nouscontacter" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-2xl text-black"
               >Nous Contacter</RouterLink
             >
           </div>
@@ -240,7 +240,7 @@
 
             <!--Navigation-->
 
-            <RouterLink to="/MentionLegales" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-black"
+            <RouterLink to="/MentionLegales" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-2xl text-black"
               >Mention Légales</RouterLink
             >
           </div>
