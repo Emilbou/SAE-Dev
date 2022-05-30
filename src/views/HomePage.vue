@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-orange-50">
+  <div class="bg-orange-50 sm:grid md:hidden lg:hidden xl:hidden 2xl:hidden">
     <HeaderXs />
     <ArtisteHP image1="src/assets/HomePage/Rectangle10.png" texte1="The Strokes" />
     <ArtisteHP image1="src/assets/HomePage/Rectangle11.png" texte1="Tame Impala" />
