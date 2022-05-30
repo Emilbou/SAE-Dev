@@ -9,6 +9,18 @@
     <ReservezBillets />
     <Footer />
   </div>
+  <div class="bg-orange-50 sm:hidden md:grid lg:hidden xl:hidden 2xl:hidden">
+    <HeaderXs />
+    <div class="grid grid-flow-col grid-rows-3 sm:hidden md:grid lg:hidden xl:hidden 2xl:hidden">
+      <ArtisteHP class="row-span-3" image1="src/assets/HomePage/Rectangle10.png" texte1="The Strokes" />
+      <ArtisteHP class="col-span-2" image1="src/assets/HomePage/Rectangle11.png" texte1="Tame Impala" />
+      <ArtisteHP class="row-span-2" image1="src/assets/HomePage/Rectangle12.png" texte1="Cage The Elephant" />
+    </div>
+    <RetrouvezArtistes />
+    <hr />
+    <ReservezBillets />
+    <Footer />
+  </div>
 </template>
 
 <script>
