@@ -15,9 +15,9 @@
     <div class="grid-flow-col grid-rows-3 sm:hidden md:grid lg:hidden xl:hidden 2xl:hidden">
       <ArtisteHP class="row-span-3" image1="src/assets/HomePage/Rectangle10.png" texte1="The Strokes" />
       <ArtisteHP class="col-span-2" image1="src/assets/HomePage/Rectangle11.png" texte1="Tame Impala" />
-      <ArtisteHP class="row-span-2" image1="src/assets/HomePage/Rectangle12.png" texte1="Cage The Elephant" />
+      <ArtisteHP class="row-span -my-4" image1="src/assets/HomePage/Rectangle12.png" texte1="Cage The Elephant" />
     </div>
-    <RetrouvezArtistes />
+    <RetrouvezArtistes class="-my-9" />
     <hr />
     <ReservezBillets />
     <Footer />
