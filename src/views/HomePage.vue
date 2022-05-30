@@ -8,7 +8,6 @@
     <hr />
     <ReservezBillets />
     <Footer />
-    <p />
   </div>
 </template>
 
