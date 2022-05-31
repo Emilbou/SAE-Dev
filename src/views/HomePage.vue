@@ -9,7 +9,7 @@
       <RetrouvezArtistes />
     </div>
 
-    <div class="sm:hidden lg:grid xl:hidden 2xl:hidden">
+    <div class="hidden sm:hidden lg:grid xl:hidden 2xl:hidden">
       <div class="grid grid-flow-col grid-rows-3 gap-4">
         <ArtisteHP class="row-span-3" image1="src/assets/HomePage/Rectangle10.png" texte1="The Strokes" />
         <ArtisteHP class="col-span-2" image1="src/assets/HomePage/Rectangle11.png" texte1="Tame Impala" />
@@ -18,11 +18,11 @@
       <RetrouvezArtistes />
     </div>
 
-    <div class="-z-50 sm:hidden lg:hidden xl:grid 2xl:grid">
+    <div class="-z-50 hidden sm:hidden lg:hidden xl:grid 2xl:grid">
       <div class="grid grid-flow-col grid-rows-2 gap-4">
         <ArtisteHP class="row-span-3" image1="src/assets/HomePage/Rectangle10.png" texte1="The Strokes" />
         <ArtisteHP class="col-span-2" image1="src/assets/HomePage/Rectangle11.png" texte1="Tame Impala" />
-        <ArtisteHP class="col-span-2 row-span-2 -my-[200px]" image1="src/assets/HomePage/Rectangle12.png" texte1="Cage The Elephant" />
+        <ArtisteHP class="col-span-2 row-span-2 -mt-[200px]" image1="src/assets/HomePage/Rectangle12.png" texte1="Cage The Elephant" />
         <RetrouvezArtistes class="col-span-3" />
       </div>
     </div>

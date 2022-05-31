@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  <div class="sm:hidden lg:hidden xl:grid 2xl:grid">
+  <div class="hidden sm:hidden lg:hidden xl:grid 2xl:grid">
     <div class="p-9">
       <div class="h-[400px] w-auto rounded-lg bg-zinc-600 p-9">
         <RouterLink to="/Artistes">
