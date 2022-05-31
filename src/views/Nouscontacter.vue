@@ -8,6 +8,7 @@
     <Input texte1="Nom*" />
     <Input texte1="Prénom*" />
     <Message texte1="Votre Message*" />
+    <Bouton />
   </div>
   <Footer />
 </template>
@@ -17,8 +18,9 @@ import HeaderXs from "../components/HeaderXs.vue";
 import Input from "../components/Nouscontacter/Input.vue";
 import Message from "../components/Nouscontacter/Message.vue";
 import Footer from "../components/Footer.vue";
+import Bouton from "../components/Nouscontacter/Bouton.vue";
 export default {
-  components: { HeaderXs, Input, Message, Footer },
+  components: { HeaderXs, Input, Message, Footer, Bouton },
 };
 </script>
 
