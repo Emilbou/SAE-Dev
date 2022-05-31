@@ -4,7 +4,7 @@
       <!--partie contenu-->
       <div class="grid justify-center">
         <div class="ml-auto mr-auto">
-          <img :src="image1" />
+          <img :..="image1" />
         </div>
 
         <!--Cercle+ fleche avec router link-->
