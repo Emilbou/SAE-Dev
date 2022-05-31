@@ -6,30 +6,30 @@
       <Dates Dates="Vendredi 19 Août :" />
 
       <p class="text-transparent">.</p>
-      <BullesProgrammation image1="src/assets/Programmation/image5-1.jpg" texte1="Test" />
+      <BullesProgrammation image1="/images/Programmation/image5-1.jpg" texte1="Test" />
       <p class="text-transparent">.</p>
       <p class="text-transparent">.</p>
-      <BullesProgrammation image1="src/assets/Programmation/image5-2.jpg" texte1="Test" />
-      <BullesProgrammation image1="src/assets/Programmation/image5-3.jpg" texte1="Test" />
+      <BullesProgrammation image1="/images/Programmation/image5-2.jpg" texte1="Test" />
+      <BullesProgrammation image1="/images/Programmation/image5-3.jpg" texte1="Test" />
       <p class="text-transparent">.</p>
       <Dates Dates="Samedi 20 Août :" />
       <p class="text-transparent">.</p>
       <p class="text-transparent">.</p>
-      <BullesProgrammation image1="src/assets/Programmation/image5-4.jpg" texte1="Test" />
+      <BullesProgrammation image1="/images/Programmation/image5-4.jpg" texte1="Test" />
       <p class="text-transparent">.</p>
       <p class="text-transparent">.</p>
-      <BullesProgrammation image1="src/assets/Programmation/image5-5.jpg" texte1="Test" />
+      <BullesProgrammation image1="/images/Programmation/image5-5.jpg" texte1="Test" />
       <p class="text-transparent">.</p>
       <Dates Dates="Dimanche 21 Août :" />
       <p class="text-transparent">.</p>
       <p class="text-transparent">.</p>
-      <BullesProgrammation image1="src/assets/Programmation/image5-6.jpg" texte1="Test" />
+      <BullesProgrammation image1="/images/Programmation/image5-6.jpg" texte1="Test" />
       <p class="text-transparent">.</p>
       <p class="text-transparent">.</p>
-      <BullesProgrammation image1="src/assets/Programmation/image5-7.jpg" texte1="Test" />
+      <BullesProgrammation image1="/images/Programmation/image5-7.jpg" texte1="Test" />
       <p class="text-transparent">.</p>
       <p class="text-transparent">.</p>
-      <BullesProgrammation image1="src/assets/Programmation/image5.jpg" texte1="Test" />
+      <BullesProgrammation image1="/images/Programmation/image5.jpg" texte1="Test" />
     </div>
   </div>
   <Footer />
