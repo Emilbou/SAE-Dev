@@ -5,6 +5,7 @@ import Artistes from '../views/Artistes.vue'
 import MentionLegales from '../views/MentionLegales.vue'
 import Nouscontacter from '../views/Nouscontacter.vue'
 import Tickets from '../views/Tickets.vue'
+import StyleGuide from '../views/StyleGuide.vue'
 
 
 const router = createRouter({
