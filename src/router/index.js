@@ -20,8 +20,31 @@ const router = createRouter({
     { path: '/MentionLegales', name: 'MentionLegales', component: MentionLegales },
     { path: '/Nouscontacter', name: 'Nouscontacter', component: Nouscontacter },
     { path: '/Tickets', name: 'Tickets', component: Tickets },
+    { path: '/style-guide', name: 'StyleGuide', component: StyleGuide },
+
 
   ]
 })
 
 export default router
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
