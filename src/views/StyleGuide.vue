@@ -10,7 +10,7 @@
 
       <div>
         <p>Icones artistes</p>
-        <ArtisteHP image1="src/assets/HomePage/Rectangle10.png" />
+        <ArtisteHP image1="src/assets/HomePage/Rectangle10.jpg" />
         <br />
         <p>Réservation billets</p>
         <ReservezBillets />
@@ -21,7 +21,7 @@
 
       <div>
         <p>Icones artistes</p>
-        <Artistes image1="src\assets\Programmation\image5-2.png" />
+        <Artistes image1="src\assets\Programmation\image5-2.jpg" />
         <br />
       </div>
 
@@ -39,7 +39,7 @@
 
       <div>
         <p>Bulles Programmation</p>
-        <BullesProgrammation image1="src\assets\Programmation\image5-6.png" />
+        <BullesProgrammation image1="src\assets\Programmation\image5-6.jpg" />
         <br />
         <p>Dates</p>
         <Dates Dates="17 Octobre 2019" />

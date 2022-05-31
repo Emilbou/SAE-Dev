@@ -6,40 +6,40 @@
     </p>
 
     <div class="sm:grid lg:hidden xl:hidden 2xl:hidden">
-      <Artistes image1="/images/Programmation/image5-1.png" texte1="Tame Impala" />
-      <Artistes image1="/images/Programmation/image5-2.png" texte1="Peach Pit" />
-      <Artistes image1="/images/Programmation/image5-3.png" texte1="The Strokes" />
-      <Artistes image1="/images/Programmation/image5-4.png" texte1="Steeve Lacy" />
-      <Artistes image1="/images/Programmation/image5-5.png" texte1="Still Woozy" />
-      <Artistes image1="/images/Programmation/image5-6.png" texte1="Stuck in the Sound" />
-      <Artistes image1="/images/Programmation/image5-7.png" texte1="Jack Stauber" />
-      <Artistes image1="/images/Programmation/image5.png" texte1="Alfie Templeman" />
+      <Artistes image1="/images/Programmation/image5-1.jpg" texte1="Tame Impala" />
+      <Artistes image1="/images/Programmation/image5-2.jpg" texte1="Peach Pit" />
+      <Artistes image1="/images/Programmation/image5-3.jpg" texte1="The Strokes" />
+      <Artistes image1="/images/Programmation/image5-4.jpg" texte1="Steeve Lacy" />
+      <Artistes image1="/images/Programmation/image5-5.jpg" texte1="Still Woozy" />
+      <Artistes image1="/images/Programmation/image5-6.jpg" texte1="Stuck in the Sound" />
+      <Artistes image1="/images/Programmation/image5-7.jpg" texte1="Jack Stauber" />
+      <Artistes image1="/images/Programmation/image5.jpg" texte1="Alfie Templeman" />
     </div>
     <p class="grid justify-end p-6 font-unna text-2xl font-bold">Et bien d'autres</p>
 
     <div class="hidden sm:grid lg:grid xl:hidden 2xl:hidden">
       <div class="grid grid-cols-2">
-        <Artistes image1="/images/Programmation/image5-1.png" texte1="Tame Impala" />
-        <Artistes image1="/images/Programmation/image5-2.png" texte1="Peach Pit" />
-        <Artistes image1="/images/Programmation/image5-3.png" texte1="The Strokes" />
-        <Artistes image1="/images/Programmation/image5-4.png" texte1="Steeve Lacy" />
-        <Artistes image1="/images/Programmation/image5-5.png" texte1="Still Woozy" />
-        <Artistes image1="/images/Programmation/image5-6.png" texte1="Stuck in the Sound" />
-        <Artistes image1="/images/Programmation/image5-7.png" texte1="Jack Stauber" />
-        <Artistes image1="/images/Programmation/image5.png" texte1="Alfie Templeman" />
+        <Artistes image1="/images/Programmation/image5-1.jpg" texte1="Tame Impala" />
+        <Artistes image1="/images/Programmation/image5-2.jpg" texte1="Peach Pit" />
+        <Artistes image1="/images/Programmation/image5-3.jpg" texte1="The Strokes" />
+        <Artistes image1="/images/Programmation/image5-4.jpg" texte1="Steeve Lacy" />
+        <Artistes image1="/images/Programmation/image5-5.jpg" texte1="Still Woozy" />
+        <Artistes image1="/images/Programmation/image5-6.jpg" texte1="Stuck in the Sound" />
+        <Artistes image1="/images/Programmation/image5-7.jpg" texte1="Jack Stauber" />
+        <Artistes image1="/images/Programmation/image5.jpg" texte1="Alfie Templeman" />
       </div>
     </div>
 
     <div class="hidden sm:hidden lg:hidden xl:grid 2xl:grid">
       <div class="grid grid-cols-3">
-        <Artistes image1="/images/Programmation/image5-1.png" texte1="Tame Impala" />
-        <Artistes image1="/images/Programmation/image5-2.png" texte1="Peach Pit" />
-        <Artistes image1="/images/Programmation/image5-3.png" texte1="The Strokes" />
-        <Artistes image1="/images/Programmation/image5-4.png" texte1="Steeve Lacy" />
-        <Artistes image1="/images/Programmation/image5-5.png" texte1="Still Woozy" />
-        <Artistes image1="/images/Programmation/image5-6.png" texte1="Stuck in the Sound" />
-        <Artistes image1="/images/Programmation/image5-7.png" texte1="Jack Stauber" />
-        <Artistes image1="/images/Programmation/image5.png" texte1="Alfie Templeman" />
+        <Artistes image1="/images/Programmation/image5-1.jpg" texte1="Tame Impala" />
+        <Artistes image1="/images/Programmation/image5-2.jpg" texte1="Peach Pit" />
+        <Artistes image1="/images/Programmation/image5-3.jpg" texte1="The Strokes" />
+        <Artistes image1="/images/Programmation/image5-4.jpg" texte1="Steeve Lacy" />
+        <Artistes image1="/images/Programmation/image5-5.jpg" texte1="Still Woozy" />
+        <Artistes image1="/images/Programmation/image5-6.jpg" texte1="Stuck in the Sound" />
+        <Artistes image1="/images/Programmation/image5-7.jpg" texte1="Jack Stauber" />
+        <Artistes image1="/images/Programmation/image5.jpg" texte1="Alfie Templeman" />
       </div>
     </div>
     <p class="grid justify-end p-6 font-unna text-2xl font-bold">Et bien d'autres</p>
