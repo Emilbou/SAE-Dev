@@ -1,31 +1,38 @@
 <template>
   <div class="bg-orange-50">
     <HeaderXs />
-    <p class="p-5 font-roboto">
-      Définitions Client : tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne
-      morale, qui visite le Site objet des présentes conditions générales. Prestations et Services : https://www.StateOfMind.com met à
-      disposition des Clients : Contenu : Ensemble des éléments constituants l’information présente sur le Site, notamment textes – images –
-      vidéos. Informations clients : Ci après dénommé « Information (s) » qui correspondent à l’ensemble des données personnelles
-      susceptibles d’être détenues par https://www.StateOfMind.com pour la gestion de votre compte, de la gestion de la relation client et à
-      des fins d’analyses et de statistiques. Utilisateur : Internaute se connectant, utilisant le site susnommé. Informations personnelles
-      : « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques
+    <div class="p-5 font-roboto">
+      <h3>Définitions Client :</h3>
+      tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le
+      Site objet des présentes conditions générales.
+      <h3>Prestations et Services :</h3>
+      https://www.StateOfMind.com met à disposition des Clients : Contenu : Ensemble des éléments constituants l’information présente sur le
+      Site, notamment textes – images – vidéos. Informations clients : Ci après dénommé « Information (s) » qui correspondent à l’ensemble
+      des données personnelles susceptibles d’être détenues par https://www.StateOfMind.com pour la gestion de votre compte, de la gestion
+      de la relation client et à des fins d’analyses et de statistiques.
+      <h3>Utilisateur :</h3>
+      Internaute se connectant, utilisant le site susnommé.
+      <h3>Informations personnelles :</h3>
+      « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques
       auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978). Les termes « données à caractère personnel », «
       personne concernée », « sous traitant » et « données sensibles » ont le sens défini par le Règlement Général sur la Protection des
       Données (RGPD : n° 2016-679) 1. Présentation du site internet. En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la
       confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet https://www.StateOfMind.com l'identité des
       différents intervenants dans le cadre de sa réalisation et de son suivi: Propriétaire : StaeOfMind – 19 33000 Bordeaux Responsable
       publication : Boucard Emilien – emilien.boucard@edu.univ-fcomte.fr Le responsable publication est une personne physique ou une
-      personne morale. Webmaster : Boucard Emilien – emilien.boucard@edu.univ-fcomte.fr Hébergeur : Infomaniak – Genève 1201 Genève
-      0782502047 Délégué à la protection des données : Boucard emilien – emilien.boucard@edu.univ-fcomte.fr Les mentions légales sont issues
-      du modèle proposé par le générateur de mentions légales RGPD d'Orson.io 2. Conditions générales d’utilisation du site et des services
-      proposés. Le Site constitue une œuvre de l’esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des
-      Réglementations Internationales applicables. Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte
-      tout ou partie des éléments ou travaux du Site. L’utilisation du site https://www.StateOfMind.com implique l’acceptation pleine et
-      entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou
-      complétées à tout moment, les utilisateurs du site https://www.StateOfMind.com sont donc invités à les consulter de manière régulière.
-      Ce site internet est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut
-      être toutefois décidée par https://www.StateOfMind.com, qui s’efforcera alors de communiquer préalablement aux utilisateurs les dates
-      et heures de l’intervention. Le site web https://www.StateOfMind.com est mis à jour régulièrement par https://www.StateOfMind.com
+      personne morale.
+      <h3>Webmaster :</h3>
+      Boucard Emilien – emilien.boucard@edu.univ-fcomte.fr Hébergeur : Infomaniak – Genève 1201 Genève 0782502047 Délégué à la protection
+      des données : Boucard emilien – emilien.boucard@edu.univ-fcomte.fr Les mentions légales sont issues du modèle proposé par le
+      générateur de mentions légales RGPD d'Orson.io 2. Conditions générales d’utilisation du site et des services proposés. Le Site
+      constitue une œuvre de l’esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des Réglementations
+      Internationales applicables. Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte tout ou partie
+      des éléments ou travaux du Site. L’utilisation du site https://www.StateOfMind.com implique l’acceptation pleine et entière des
+      conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à
+      tout moment, les utilisateurs du site https://www.StateOfMind.com sont donc invités à les consulter de manière régulière. Ce site
+      internet est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être
+      toutefois décidée par https://www.StateOfMind.com, qui s’efforcera alors de communiquer préalablement aux utilisateurs les dates et
+      heures de l’intervention. Le site web https://www.StateOfMind.com est mis à jour régulièrement par https://www.StateOfMind.com
       responsable. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à l’utilisateur
       qui est invité à s’y référer le plus souvent possible afin d’en prendre connaissance. 3. Description des services fournis. Le site
       internet https://www.StateOfMind.com a pour objet de fournir une information concernant l’ensemble des activités de la société.
@@ -174,7 +181,7 @@
       d’Internet. 10. Droit applicable et attribution de juridiction. Tout litige en relation avec l’utilisation du site
       https://www.StateOfMind.com est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution
       exclusive de juridiction aux tribunaux compétents de Montbéliard
-    </p>
+    </div>
   </div>
   <Footer />
 </template>
