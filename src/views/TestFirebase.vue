@@ -1,21 +1,13 @@
 <template>
-  <div class="text-white">
-    <h5 class="text-white">Liste des artistes - Simple liste</h5>
+  <div class>
+    <h5 class>Liste des artistes - Simple liste</h5>
   </div>
   <div v-for="artiste in listeArtistes" :key="artiste.id">
-    <p class="text-white">{{ artiste.nom }}</p>
+    <p>{{ artiste.nom }}</p>
   </div>
   <hr />
 </template>
-<template>
-  <div class="text-white">
-    <h5 class="text-white">Liste des artistes - Simple liste</h5>
-  </div>
-  <div v-for="artiste in listeArtistes" :key="artiste.id">
-    <p class="text-white">{{ artiste.nom }}</p>
-  </div>
-  <hr />
-</template>
+
 
 <script>
 import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
