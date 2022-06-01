@@ -2,17 +2,17 @@
   <div class="bg-orange-50">
     <HeaderXs />
     <div class="p-5 font-roboto">
-      <h3>Définitions Client :</h3>
+      <h3 class="text-2xl">Définitions Client :</h3>
       tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le
       Site objet des présentes conditions générales.
-      <h3>Prestations et Services :</h3>
+      <h3 class="text-2xl">Prestations et Services :</h3>
       https://www.StateOfMind.com met à disposition des Clients : Contenu : Ensemble des éléments constituants l’information présente sur le
       Site, notamment textes – images – vidéos. Informations clients : Ci après dénommé « Information (s) » qui correspondent à l’ensemble
       des données personnelles susceptibles d’être détenues par https://www.StateOfMind.com pour la gestion de votre compte, de la gestion
       de la relation client et à des fins d’analyses et de statistiques.
-      <h3>Utilisateur :</h3>
+      <h3 class="text-2xl">Utilisateur :</h3>
       Internaute se connectant, utilisant le site susnommé.
-      <h3>Informations personnelles :</h3>
+      <h3 class="text-2xl">Informations personnelles :</h3>
       « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques
       auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978). Les termes « données à caractère personnel », «
       personne concernée », « sous traitant » et « données sensibles » ont le sens défini par le Règlement Général sur la Protection des
@@ -21,7 +21,7 @@
       différents intervenants dans le cadre de sa réalisation et de son suivi: Propriétaire : StaeOfMind – 19 33000 Bordeaux Responsable
       publication : Boucard Emilien – emilien.boucard@edu.univ-fcomte.fr Le responsable publication est une personne physique ou une
       personne morale.
-      <h3>Webmaster :</h3>
+      <h3 class="text-2xl">Webmaster :</h3>
       Boucard Emilien – emilien.boucard@edu.univ-fcomte.fr Hébergeur : Infomaniak – Genève 1201 Genève 0782502047 Délégué à la protection
       des données : Boucard emilien – emilien.boucard@edu.univ-fcomte.fr Les mentions légales sont issues du modèle proposé par le
       générateur de mentions légales RGPD d'Orson.io 2. Conditions générales d’utilisation du site et des services proposés. Le Site
