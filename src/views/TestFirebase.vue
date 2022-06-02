@@ -6,6 +6,7 @@
     <p>{{ artistes.nom }}</p>
     <img :src="artistes.image" />
   </div>
+  <button class="mt-2 border-2 text-white" type="button" @click="deleteArtistes(artistes)" title="Suppression">Delete</button>
   <hr />
   <!--I-----------------------------------------------------------------------------I
   
