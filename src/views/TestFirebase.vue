@@ -2,22 +2,25 @@
   <div class>
     <h5 class>Liste des artistes - Simple liste</h5>
   </div>
-  <div v-for="artiste in listeArtistes" :key="artiste.id">
-    <p>{{ artiste.nom }}</p>
+  <div v-for="artistes in listeartistes" :key="artistes.id">
+    <p>{{ artistes.nom }}</p>
+    <img :src="artistes.image" />
   </div>
   <hr />
-  <!--I-----------------------------------------------------------------------------I-->
+  <!--I-----------------------------------------------------------------------------I
+  
+  I-----------------------------------------------------------------------------I-->
   <div>
-    <h5>Liste des pays - Liste synchronisée</h5>
+    <h5>Liste des artistes - Liste synchronisée</h5>
   </div>
   <form class="mb-3">
-    <h6>Nouveau pays</h6>
+    <h6>Nouveau artistes</h6>
     <div class="input-group">
       <div class="input-group-prepend">
         <span class="input-group-text">Nom</span>
       </div>
       <input type="text" v-model="nom" class="form-control" required />
-      <button class="btn btn-light" type="button" @click="createPays()" title="Création">
+      <button class="btn btn-light" type="button" @click="createartistes()" title="Création">
         <i class="fa fa-save fa-lg"></i>
       </button>
     </div>
@@ -31,16 +34,16 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="pays in listePaysSynchro" :key="pays.id">
-        <td>{{ pays.id }}</td>
+      <tr v-for="artistes in listeartistesSynchro" :key="artistes.id">
+        <td>{{ artistes.id }}</td>
         <td>
-          <input type="text" v-model="pays.nom" />
+          <input type="text" v-model="artistes.nom" />
         </td>
         <td>
-          <button class="btn light" @click.prevent="updatePays(pays)">
+          <button class="btn light" @click.prevent="updateartistes(artistes)">
             <i class="fa fa-edit fa-lg"></i>
           </button>
-          <button class="btn light" @click.prevent="deletePays(pays)">
+          <button class="btn light" @click.prevent="deleteartistes(artistes)">
             <i class="fa fa-trash fa-lg"></i>
           </button>
         </td>
@@ -53,30 +56,41 @@
 
 
 <script>
-import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+import { getFirestore, collection, onSnapshot } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
 
 export default {
   data() {
     return {
-      nom: null,
-      message: null,
-      listeArtistes: [],
+      listeartistes: [],
     };
   },
   mounted() {
-    this.getArtistes();
+    this.getartistes();
   },
   methods: {
-    async getArtistes() {
+    async getartistes() {
       const firestore = getFirestore();
-      const dbArtistes = collection(firestore, "artistes");
-      const query = await getDocs(dbArtistes);
-      query.forEach((doc) => {
-        let artistes = {
+      const dbartistes = collection(firestore, "artistes");
+      const query = await onSnapshot(dbartistes, (snapshot) => {
+        console.log("query", query);
+        this.listeartistes = snapshot.docs.map((doc) => ({
           id: doc.id,
-          nom: doc.data().nom,
-        };
-        this.listeArtistes.push(artistes);
+          ...doc.data(),
+        }));
+        this.listeartistes.forEach(function (personne) {
+          const storage = getStorage();
+          const spaceRef = ref(storage, "artistes/" + personne.image);
+          getDownloadURL(spaceRef)
+            .then((url) => {
+              personne.image = url;
+              console.log("personne", personne);
+            })
+            .catch((error) => {
+              console.log("erreur downloadUrl", error);
+            });
+        });
+        console.log("listeartistes", this.listeartistes);
       });
     },
   },
