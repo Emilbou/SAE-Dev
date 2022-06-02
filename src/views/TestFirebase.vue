@@ -34,7 +34,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="artistes in listeartistesSynchro" :key="artistes.id">
+      <tr v-for="artistes in listeartistes" :key="artistes.id">
         <td>{{ artistes.id }}</td>
         <td>
           <input type="text" v-model="artistes.nom" />
@@ -63,6 +63,7 @@ export default {
   data() {
     return {
       listeartistes: [],
+      nom: null,
     };
   },
   mounted() {
