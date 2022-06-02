@@ -7,6 +7,7 @@ import Nouscontacter from '../views/Nouscontacter.vue'
 import Tickets from '../views/Tickets.vue'
 import StyleGuide from '../views/StyleGuide.vue'
 import TestFirebase from '../views/TestFirebase.vue'
+import Test2 from '../views/Test2.vue'
 
 
 const router = createRouter({
@@ -24,6 +25,7 @@ const router = createRouter({
     { path: '/Tickets', name: 'Tickets', component: Tickets },
     { path: '/style-guide', name: 'StyleGuide', component: StyleGuide },
     { path: '/TestFirebase', name: 'TestFirebase', component: TestFirebase },
+    { path: '/Test2', name: 'Test2', component: Test2 },
 
 
   ]
