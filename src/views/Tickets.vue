@@ -1,7 +1,11 @@
 <template>
-  <div class="bg-orange-50">
+  <div>
     <HeaderXs />
-    <p>Tickets</p>
+    <nav class="text-lg text-blue-300 underline">
+      <RouterLink to="/CreateFB">Création FireBase FireBase </RouterLink>
+      <br />
+      <RouterLink to="/AffichageListeFB">Affichage Liste FireBase </RouterLink>
+    </nav>
   </div>
 </template>
 
