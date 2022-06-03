@@ -188,7 +188,9 @@
 
             <!--Navigation-->
 
-            <RouterLink to="/Tickets" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-2xl text-black">Tickets</RouterLink>
+            <RouterLink to="/ContenuDynamique" @click="menuOuvert = !menuOuvert" class="mx-10 font-roboto text-2xl text-black"
+              >ContenuDynamique</RouterLink
+            >
           </div>
 
           <!--icones Nous contacter-->

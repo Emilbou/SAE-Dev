@@ -4,7 +4,7 @@ import Programmation from '../views/Programmation.vue'
 import Artistes from '../views/Artistes.vue'
 import MentionLegales from '../views/MentionLegales.vue'
 import Nouscontacter from '../views/Nouscontacter.vue'
-import Tickets from '../views/Tickets.vue'
+import ContenuDynamique from '../views/ContenuDynamique.vue'
 import StyleGuide from '../views/StyleGuide.vue'
 import AffichageListeFB from '../views/AffichageListeFB.vue'
 import CreateFB from '../views/CreateFB.vue'
@@ -22,7 +22,7 @@ const router = createRouter({
     { path: '/Artistes', name: 'Artistes', component: Artistes },
     { path: '/MentionLegales', name: 'MentionLegales', component: MentionLegales },
     { path: '/Nouscontacter', name: 'Nouscontacter', component: Nouscontacter },
-    { path: '/Tickets', name: 'Tickets', component: Tickets },
+    { path: '/ContenuDynamique', name: 'ContenuDynamique', component: ContenuDynamique },
     { path: '/style-guide', name: 'StyleGuide', component: StyleGuide },
     { path: '/AffichageListeFB', name: 'AffichageListeFB', component: AffichageListeFB },
     { path: '/CreateFB', name: 'CreateFB', component: CreateFB },

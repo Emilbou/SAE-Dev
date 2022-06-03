@@ -11,7 +11,6 @@
 
 <script>
 import HeaderXs from "../components/HeaderXs.vue";
-import Footer from "../components/Footer.vue";
 
 export default {
   components: { HeaderXs },
