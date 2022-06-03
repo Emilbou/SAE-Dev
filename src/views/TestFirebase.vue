@@ -1,115 +1,116 @@
 <template>
-  <div class>
-    <h5 class>Liste des artistes - Simple liste</h5>
-  </div>
-  <div v-for="artistes in listeartistes" :key="artistes.id">
-    <p>{{ artistes.nom }}</p>
-    <img :src="artistes.image" />
-  </div>
-  <button class="mt-2 border-2 text-white" type="button" @click="deleteArtistes(artistes)" title="Suppression">Delete</button>
-  <hr />
-  <!--I-----------------------------------------------------------------------------I
-  
-  I-----------------------------------------------------------------------------I-->
-  <div>
-    <h5>Liste des artistes - Liste synchronisée</h5>
-  </div>
-  <form class="mb-3">
-    <h6>Nouveau artistes</h6>
-    <div class="input-group">
-      <div class="input-group-prepend">
-        <span class="input-group-text">Nom</span>
+  <div class="m-auto mb-20 grid w-96 bg-black">
+    <h1 class="my-4 text-center text-3xl text-white">Liste Artistes Synchro</h1>
+    <form class="mb-10"></form>
+    <input type="text" v-model="filter" class="mx-5 mt-2 border-2 p-3 text-black" placeholder="Filtre" />
+    <button class="mx-5 mt-2 border-2 p-3 text-white" type="button" title="Filtrage">filtrage</button>
+    <form class="w-full" v-for="artistes in filterByName" :key="artistes.id">
+      <div>
+        <input type="text" v-model="artistes.nom" required class="mx-5 mt-2 w-full border-2 p-3" />
+        <button class="mx-5 mt-2 border-2 p-3 text-white" type="button" @click="updateArtistes(artistes)" title="Modification">
+          Modifier
+        </button>
+        <button class="mx-5 border-2 p-3 text-white" type="button" @click="deleteArtistes(artistes)" title="Suppression">Supprimer</button>
       </div>
-      <input type="text" v-model="nom" class="form-control" required />
-      <button class="btn btn-light" type="button" @click="createartistes()" title="Création">
-        <i class="fa fa-save fa-lg"></i>
-      </button>
-    </div>
-  </form>
-  <table class="table">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">Id</th>
-        <th scope="col">Nom</th>
-        <th scope="col">Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="artistes in listeartistes" :key="artistes.id">
-        <td>{{ artistes.id }}</td>
-        <td>
-          <input type="text" v-model="artistes.nom" />
-        </td>
-        <td>
-          <button class="btn light" @click.prevent="updateartistes(artistes)">
-            <i class="fa fa-edit fa-lg"></i>
-          </button>
-          <button class="btn light" @click.prevent="deleteartistes(artistes)">
-            <i class="fa fa-trash fa-lg"></i>
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <hr />
-  <!--I-----------------------------------------------------------------------------I-->
+    </form>
+  </div>
 </template>
 
-
 <script>
-import { getFirestore, collection, onSnapshot } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
-import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
+
+import {
+  getFirestore,
+  collection,
+  doc,
+  getDocs,
+  addDoc,
+  updateDoc,
+  deleteDoc,
+  onSnapshot,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 
 export default {
   data() {
     return {
-      listeartistes: [],
+      user: {
+        email: null,
+        password: null,
+      },
+      message: null,
       nom: null,
+      listeArtistesSynchro: [],
+      filter: "",
     };
   },
-  mounted() {
-    this.getartistes();
-  },
-  methods: {
-    async getartistes() {
-      const firestore = getFirestore();
-      const dbartistes = collection(firestore, "artistes");
-      const query = await onSnapshot(dbartistes, (snapshot) => {
-        console.log("query", query);
-        this.listeartistes = snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-        this.listeartistes.forEach(function (personne) {
-          const storage = getStorage();
-          const spaceRef = ref(storage, "artistes/" + personne.image);
-          getDownloadURL(spaceRef)
-            .then((url) => {
-              personne.image = url;
-              console.log("personne", personne);
-            })
-            .catch((error) => {
-              console.log("erreur downloadUrl", error);
-            });
-        });
-        console.log("listeartistes", this.listeartistes);
+  computed: {
+    orderByName: function () {
+      return this.listeArtistesSynchro.sort(function (a, b) {
+        if (a.nom < b.nom) return -1;
+        if (a.nom > b.nom) return 1;
+        return 0;
       });
+    },
+    filterByName: function () {
+      if (this.filter.length > 0) {
+        let filter = this.filter.toLowerCase();
+        return this.orderByName.filter(function (artistes) {
+          return artistes.nom.toLowerCase().includes(filter);
+        });
+      } else {
+        return this.orderByName;
+      }
+    },
+  },
+
+  mounted() {
+    let user = getAuth().currentUser;
+    if (user) {
+      this.user = user;
+      this.message = "User déjà connecté : " + this.user.email;
+    } else {
+      this.message = "User non connecté : " + this.user.email;
+    }
+
+    this.getArtistesSynchro();
+  },
+
+  methods: {
+    async getArtistesSynchro() {
+      const firestore = getFirestore();
+      const dbArtistes = collection(firestore, "artistes");
+      const query = await onSnapshot(dbArtistes, (snapshot) => {
+        this.listeArtistesSynchro = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+      });
+    },
+
+    async createArtistes() {
+      const firestore = getFirestore();
+      const dbArtistes = collection(firestore, "artistes");
+      const docRef = await addDoc(dbArtistes, {
+        nom: this.nom,
+      });
+      //console.log('document créé avec le id : ', docRef.id);
+    },
+
+    async updateArtistes(artistes) {
+      const firestore = getFirestore();
+      const docRef = doc(firestore, "artistes", artistes.id);
+      await updateDoc(docRef, {
+        nom: artistes.nom,
+      });
+    },
+
+    async deleteArtistes(artistes) {
+      const firestore = getFirestore();
+      const docRef = doc(firestore, "artistes", artistes.id);
+      await deleteDoc(docRef);
     },
   },
 };
 </script>
-
-<style scoped>
-.center {
-  text-align: center;
-}
-.title {
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-bottom: 0.4rem;
-  color: #34495e;
-}
-h4 {
-  font-weight: bold;
-}
-</style>
